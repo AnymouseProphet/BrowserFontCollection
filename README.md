@@ -216,16 +216,16 @@ were designed by [Susan Kare](https://en.wikipedia.org/wiki/Susan_Kare).
 Ten of them I would like to reproduce as modern libre OpenType fonts that are
 available as local fonts for browsers to use.
 
-AMP Acropolis (inspired by "Classic Mac" Athens)
-AMP Essanay (inspired by "Classic Mac" Chicago)
-AMP Maison Tavel (inspired by "Classic Mac" Geneva)
-AMP Westminster Abbey (inspired by "Classic Mac" London)
-AMP Sunset Strip (inspired by "Classic Mac" Los Angeles)
-AMP Fort Antoine (inspired by "Classic Mac" Monaco)
-AMP Staten Island (inspired by "Classic Mac" New York)
-AMP Alcatraz (inspired by "Classic Mac" San Francisco)
-AMP Casa Lomo (inspired by "Classic Mac" Toronto)
-AMP Cannaregio (inspired by "Classic Mac" Venice)
+* AMP Acropolis (inspired by "Classic Mac" Athens)
+* AMP Essanay (inspired by "Classic Mac" Chicago)
+* AMP Maison Tavel (inspired by "Classic Mac" Geneva)
+* AMP Westminster Abbey (inspired by "Classic Mac" London)
+* AMP Sunset Strip (inspired by "Classic Mac" Los Angeles)
+* AMP Fort Antoine (inspired by "Classic Mac" Monaco)
+* AMP Staten Island (inspired by "Classic Mac" New York)
+* AMP Alcatraz (inspired by "Classic Mac" San Francisco)
+* AMP Casa Lomo (inspired by "Classic Mac" Toronto)
+* AMP Cannaregio (inspired by "Classic Mac" Venice)
 
 The metrics would not be exact and the glyph reproduction would not be exact and
 the codepoints covered would be much more extensive 
