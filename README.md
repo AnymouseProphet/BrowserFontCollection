@@ -216,16 +216,16 @@ were designed by [Susan Kare](https://en.wikipedia.org/wiki/Susan_Kare).
 Ten of them I would like to reproduce as modern libre OpenType fonts that are
 available as local fonts for browsers to use.
 
-* AMP Acropolis (inspired by "Classic Mac" Athens)
-* AMP Essanay (inspired by "Classic Mac" Chicago)
-* AMP Maison Tavel (inspired by "Classic Mac" Geneva)
-* AMP Westminster Abbey (inspired by "Classic Mac" London)
-* AMP Sunset Strip (inspired by "Classic Mac" Los Angeles)
-* AMP Fort Antoine (inspired by "Classic Mac" Monaco)
-* AMP Staten Island (inspired by "Classic Mac" New York)
-* AMP Alcatraz (inspired by "Classic Mac" San Francisco)
-* AMP Casa Lomo (inspired by "Classic Mac" Toronto)
-* AMP Cannaregio (inspired by "Classic Mac" Venice)
+* AMP Spyridon (inspired by "Classic Mac" Athens)
+* AMP Weegham Park (inspired by "Classic Mac" Chicago)
+* AMP Wankdorf (inspired by "Classic Mac" Geneva)
+* AMP Ashburton Grove (inspired by "Classic Mac" London)
+* AMP Gilmore Field (inspired by "Classic Mac" Los Angeles)
+* AMP Stade Louis II (inspired by "Classic Mac" Monaco)
+* AMP Polo Grounds (inspired by "Classic Mac" New York)
+* AMP Candlestick Park (inspired by "Classic Mac" San Francisco)
+* AMP Hanlan's Point (inspired by "Classic Mac" Toronto)
+* AMP Ermelinda (inspired by "Classic Mac" Venice)
 
 The metrics would not be exact and the glyph reproduction would not be exact and
 the codepoints covered would be much more extensive 
@@ -236,7 +236,7 @@ Default CSS Generic Font Families
 
 There are many "Generic" font families that can be specified at the end of a CSS
 `font-family` declaration so the web browser knows what font to use if none of
-the available fonts are available:
+the specified fonts are available:
 
 * `serif`  
 &#160;&#160;&#160;&#160; The default serif family. I recommend "Linux Libertine"
@@ -266,10 +266,10 @@ that font specified more than once in CSS files and it is a rather legible
 fantasy font.
 * `emoji`  
 &#160;&#160;&#160;&#160; Font used for Emoji glyphs. This is something many
-browsers currently develop themselves and that is probably okay but Noto Color
-Emoji is what I would suggest browsers choose rather than developing their own.
+browsers currently develop themselves and that is probably okay but "Noto Color
+Emoji" is what I would suggest browsers choose rather than developing their own.
 Let other Emoji fonts exist but let the Noto team develop the default---they do
-a damn good job and its libre.
+a damn good job and it is libre.
 * `math`  
 &#160;&#160;&#160;&#160; The default font for MathML. STIX fonts are the the
 defacto standard and should be.
