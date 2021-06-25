@@ -124,33 +124,39 @@ The current list:
 * AMP Desert Sans Black (substitute for Arial Black)
 * AMP Mortal Emulation (substitute for Andalé Mono)
 * AMP New Deliverance (substitute for Courier New)
-* AMP Junkyard Sans (substitute for Comic Sans MS)
+* AMP Scrapyard Sans (substitute for Comic Sans MS)
 * AMP Blue Ridge (substitute for Georgia)
 * AMP Air Horn (substitute for Impact)
 * Linux Libertine (substitute for Times New Roman)
-* AMP Catapult (substitute for Trebuchet MS)
+* AMP Mangonel (substitute for Trebuchet MS)
 * AMP Green Envy (substitute for Verdana)
 * AMP Tahoe (substitute for Tahoma)
 * AMP American Hipster (substitute for American Typewriter)
 * AMP Redmond Petroglyph (substitute for Webdings, Wingdings, Wingdings 2,
 Wingdings 3)
+* AMP Harlett (substitute for Marlett, a Windows UI interface font)
 
-The above fonts (except for "AMP Tahoe", "AMP American Hipster", "Noto Color
-Emoji", and "STIX Fonts") are intended as substitutes for the Microsoft "Core
-Web Fonts" when a web pages specifies fonts in the Microsoft "Core Web Fonts".
+The above fonts (except for "AMP Tahoe" and "AMP American Hipster" and "AMP
+Harlett") are intended as substitutes for the Microsoft "Core Web Fonts" when a
+web pages specifies fonts in the Microsoft "Core Web Fonts".
 
 I decided not to use an existing Helvetica clone as an Arial substitute even
 though they are plentiful because even though it has metric compatibility with
 Helvetica, Arial is a significantly different design. Also, given how common
-"Arial Unicode" is installed on both Windows and macOS systems---a long term
+"Arial Unicode MS" is installed on both Windows and macOS systems---a long term
 goal of the substitute should be font with the same kind of extensive Unicode
-coverage as "Arial Unicode".
+coverage as "Arial Unicode MS".
+
+I am not making a narrow version of the "AMP Desert Sans" at this time. Websites
+that specify a narrow version of Arial but do not serve it from a font server
+will end up with the narrow "TeX Gyre Heros" substituted instead. That is not
+ideal.
 
 I decided not to use an existing Courier clone as a "Courier New" substitute
 because there are many serif differences between Courier and Courier New.
 
 A lot of people like to hate "Comic Sans MS" however that font is very helpful
-to many dyslexic users. The name "Junkyard Sans" was chosen because Junkyards
+to many dyslexic users. The name "Scrapyard Sans" was chosen because Scrapyards
 often have handwritten signs that can resemble comic strip lettering *and*
 because I think that name would tickle those who love to hate "Comic Sans MS".
 
@@ -213,11 +219,12 @@ There were twelve bitmap fonts that were readily available on Apple Macintosh
 systems through System 6.0.8. I call them the "Classic Mac Fonts". Most of them
 were designed by [Susan Kare](https://en.wikipedia.org/wiki/Susan_Kare).
 
-Ten of them I would like to reproduce as modern libre OpenType fonts that are
+Eleven of them I would like to reproduce as modern libre OpenType fonts that are
 available as local fonts for browsers to use.
 
 * AMP Spyridon (inspired by "Classic Mac" Athens)
 * AMP Weegham Park (inspired by "Classic Mac" Chicago)
+* AMP Cairoglyphs (inspired by "Classic Mac" Cairo)
 * AMP Wankdorf (inspired by "Classic Mac" Geneva)
 * AMP Ashburton Grove (inspired by "Classic Mac" London)
 * AMP Gilmore Field (inspired by "Classic Mac" Los Angeles)
@@ -228,7 +235,10 @@ available as local fonts for browsers to use.
 * AMP Ermelinda (inspired by "Classic Mac" Venice)
 
 The metrics would not be exact and the glyph reproduction would not be exact and
-the codepoints covered would be much more extensive 
+the codepoints covered would be much more extensive.
+
+"AMP Cairoglyphs" will use visually distinctive art so that it does not infringe
+upon any of the glyphs that are trademarked, such as Claris the Dogcow.
 
 
 Default CSS Generic Font Families
@@ -260,7 +270,7 @@ Chancery and clones as best for nostalgia excerpts rather than generic cursive
 needs.
 * `fantasy`  
 &#160;&#160;&#160;&#160; A font used for fantasy style typesetting. For this I
-I hope to develop a new font called "AMP Bloomin Fairy" inspired by the fantasy
+I hope to develop a new font called "AMP Bloomin' Fairy" inspired by the fantasy
 font [Luminary](https://www.myfonts.com/fonts/canadatype/luminari/). I have seen
 that font specified more than once in CSS files and it is a rather legible
 fantasy font.
@@ -309,17 +319,17 @@ That is not an intentional bias, it is an ignorance bias.
 In many cases, especially for the "AMP" fonts, additional linguistic support can
 be added to some of the fonts if the project takes off. For example, the planned
 "AMP Desert Sans" should probably have a goal of the same coverage that the font
-"Arial Unicode" has.
+"Arial Unicode MS" has.
 
 In the case of the TeX Gyre fonts, coordination should be done with
 [GUST](http://www.gust.org.pl/projects/e-foundry/tex-gyre/index_html) for any
 additional codepoints.
 
 The font "Intel Clear Sans" also should probably have the same Unicode coverage
-that "Arial Unicode" has. I am *almost* inclined to find out if crowd-funding
+that "Arial Unicode MS" has. I am *almost* inclined to find out if crowd-funding
 could help inspire Monotype to fork it and make a libre "Clear Sans MT" based on
 "Intel Clear Sans" that includes small-caps and additional Unicode coverage on
-par with "Arial Unicode".
+par with "Arial Unicode MS".
 
 Adding codepoints to the fonts chosen with a Latin script bias does will not
 completely solve the problem. In some cases fonts designed specifically for the

@@ -84,6 +84,14 @@ ellipsis but these fonts can be used in other applications.
 
 All codepoints in U+201x
 
+* U+229E (Often used to simulate Windows key)
+* U+2325 (Option key symbol)
+* U+2318 (Place of Interest Sign - used for Apple Flower key)
+* U+F8FF (Used for Apple logo but will use below pear instead)
+* U+1F350 (Pear Emoji)
+* U+1F441 (Used for 1984 Eye, easter egg alternate glyph for U+F8FF)
+
+
 ### Phase 2: First Major Step towards WGL-4
 
 * All missing codepoints in Latin Extended A
