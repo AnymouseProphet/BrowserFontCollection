@@ -35,6 +35,23 @@ When the specified font is critical that really is what they should be doing
 anyway.
 
 
+Noto Fonts
+----------
+
+The Noto Fonts should be default base simply because of their extensive Unicode
+codepoint coverage and the fact that they work well with other. This project is
+meant to extend what fonts are available on a system to extend webmaster
+stylistic choice and at least somewhat preserve stylistic choices in historic
+HTML documents that do not serve the fonts as webfonts.
+
+This project is not intended to duplicate what the Noto project already does and
+does quite well.
+
+This is intended to be a standardized collection of fonts that extends what is
+available to a web browser beyond the Noto fonts when the web browser combats
+Browser Fingerprinting by not accessing fonts installed on the operating system.
+
+
 Free Libre Open Source Software
 -------------------------------
 
@@ -220,7 +237,8 @@ systems through System 6.0.8. I call them the "Classic Mac Fonts". Most of them
 were designed by [Susan Kare](https://en.wikipedia.org/wiki/Susan_Kare).
 
 Eleven of them I would like to reproduce as modern libre OpenType fonts that are
-available as local fonts for browsers to use.
+available as local fonts for browsers to use. Glyphs from the twelfth will be
+part of one of those eleven.
 
 * AMP Spyridon (inspired by "Classic Mac" Athens)
 * AMP Weegham Park (inspired by "Classic Mac" Chicago)
@@ -238,7 +256,10 @@ The metrics would not be exact and the glyph reproduction would not be exact and
 the codepoints covered would be much more extensive.
 
 "AMP Cairoglyphs" will use visually distinctive art so that it does not infringe
-upon any of the glyphs that are trademarked, such as Claris the Dogcow.
+upon any of the glyphs that are trademarked, such as Clarus the Dogcow.
+
+The "hidden" picture glyphs in some of the bitmap Mac fonts will be OpenType
+alternates to the bullet symbol.
 
 
 Default CSS Generic Font Families
@@ -249,18 +270,15 @@ There are many "Generic" font families that can be specified at the end of a CSS
 the specified fonts are available:
 
 * `serif`  
-&#160;&#160;&#160;&#160; The default serif family. I recommend "Linux Libertine"
-for this purpose. The default serif family *should* be paired with the STIX math
-fonts used for MathML.
+&#160;&#160;&#160;&#160; The default serif family. I recommend "Noto Serif" for
+this purpose. The Noto fonts (commissioned by Google) have excellent Unicode
+codepoint coverage.
 * `sans-serif`  
-&#160;&#160;&#160;&#160; The default sans-serif family. I recommend the font
-[Intel Clear Sans](https://01.org/clear-SANS) for this purpose. That font is the
-easiest on my eyes, giving me the longest period of time before reading
-comprehension drops due to eye/brain fatigue.
+&#160;&#160;&#160;&#160; The default sans-serif family. I recommend "Noto Sans"
+for this purpose. The Noto fonts have excellent Unicode codepoint coverage.
 * `monospace`  
-&#160;&#160;&#160;&#160; I recommend
-"[Space Mono](https://fonts.google.com/specimen/Space+Mono)" for this. It is a
-really nice monospace font with a dotted zero.
+&#160;&#160;&#160;&#160; I recommend "Noto Sans" for this purpose. The Noto
+fonts have excellent Unicode codepoint coverage.
 * `cursive`  
 &#160;&#160;&#160;&#160; A font used for cursive-like rendering of text. I kind
 of like "[Rampage Monoline](https://creatypestudio.co/rampage/)" but that is not
@@ -286,7 +304,7 @@ defacto standard and should be.
 * `fangsong`  
 &#160;&#160;&#160;&#160; The default font for Fang Song typefaces in Chinese. It
 has been described to be as an intermediary between Serif and Sans-serif. I am
-not qualified to have a valued opinion on the font for this.
+not qualified to have a valued opinion on the default font for this.
 
 The following generic CSS font families I do not like:
 
@@ -302,7 +320,7 @@ descriptions of what they are for, system UI fonts are often user configurable
 so those CSS generic families help with browser finger-printing.
 
 Personally I recommend `system-ui`, `ui-rounded`, and `ui-sans-serif` map to
-`sans-serif`, `ui-serif` should map to `serif`, and `ui-monospace` should map to
+`sans-serif`; `ui-serif` should map to `serif`; and `ui-monospace` should map to
 `monospace`.
 
 It was a mistake for W3C to add those generic families to the CSS specification
@@ -323,21 +341,18 @@ be added to some of the fonts if the project takes off. For example, the planned
 
 In the case of the TeX Gyre fonts, coordination should be done with
 [GUST](http://www.gust.org.pl/projects/e-foundry/tex-gyre/index_html) for any
-additional codepoints.
-
-The font "Intel Clear Sans" also should probably have the same Unicode coverage
-that "Arial Unicode MS" has. I am *almost* inclined to find out if crowd-funding
-could help inspire Monotype to fork it and make a libre "Clear Sans MT" based on
-"Intel Clear Sans" that includes small-caps and additional Unicode coverage on
-par with "Arial Unicode MS".
+additional codepoints. I do not know how well "TeX Gyre Pagella" supports
+Polytonic Greek but since "Palatino Linotype" has excellent support for
+Polytonic Greek I feel that such support should be added to "TeX Gyre Pagella"
+if it does not already have it (it might).
 
 Adding codepoints to the fonts chosen with a Latin script bias does will not
 completely solve the problem. In some cases fonts designed specifically for the
 non-Latin script market are probably appropriate. The "generic" family defaults
 may also need to be fluid, changing if the web server sends a language header
-where a different default for a "generic" family is better.
+where a different default for a "generic" family is better. I kind of suspect
+web browsers already do this.
 
-For example, "Linux Libertine" quite likely is not the best default serif font
-if `ko` (Korean) is specified as the language for the web page.
+The Noto font collection probably covers this need the best.
 
 
