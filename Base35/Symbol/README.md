@@ -49,7 +49,7 @@ These font slots are traditionally not used in the Symbol font. I have put some
 glyphs related to operating system technical support within that range, and may
 add additional glyphs as needed.
 
-These glyphs are only available by their unicode codepoint. HTML/XML entities
+These glyphs are only available by their Unicode codepoint. HTML/XML entities
 are shown below.
 
 * `&#xF810;` --- Flying flag icon intended to be reminiscent of the Windows Key.
